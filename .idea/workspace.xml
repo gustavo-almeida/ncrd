@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29f79f91-edd1-4563-8bdd-1a3e55766eb3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="acceptance.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/acceptance.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state relative-caret-position="270">
+              <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -69,14 +68,14 @@
       <file leaf-file-name="BaseTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-53">
-              <caret line="84" column="26" lean-forward="true" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+            <state relative-caret-position="146">
+              <caret line="103" column="64" lean-forward="true" selection-start-line="103" selection-start-column="64" selection-end-line="103" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4603#4604#0" expanded="true" />
-                <element signature="e#4637#4638#0" expanded="true" />
-                <element signature="e#4689#4690#0" expanded="true" />
-                <element signature="e#4722#4723#0" expanded="true" />
+                <element signature="e#6212#6213#0" expanded="true" />
+                <element signature="e#6246#6247#0" expanded="true" />
+                <element signature="e#6298#6299#0" expanded="true" />
+                <element signature="e#6331#6332#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -345,27 +344,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.05 at 13h 39m 45s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.05 at 13h 41m 11s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.05 at 13h 42m 11s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.05 at 14h 01m 28s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.05 at 14h 03m 45s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.05 at 14h 08m 53s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.05 at 14h 09m 35s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.05 at 14h 21m 55s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
     </history-entry>
@@ -374,6 +352,27 @@
     </history-entry>
     <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.05 at 14h 25m 26s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.05 at 14h 46m 21s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.05 at 15h 07m 55s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.05 at 15h 40m 11s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.05 at 15h 48m 10s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.05 at 15h 57m 00s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptance_xml - 2018.01.05 at 15h 15m 10s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptance.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptance_xml - 2018.01.05 at 15h 25m 04s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptance.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -440,14 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acceptance.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
@@ -464,16 +455,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/acceptance.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-53">
-          <caret line="84" column="26" lean-forward="true" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+        <state relative-caret-position="146">
+          <caret line="103" column="64" lean-forward="true" selection-start-line="103" selection-start-column="64" selection-end-line="103" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4603#4604#0" expanded="true" />
-            <element signature="e#4637#4638#0" expanded="true" />
-            <element signature="e#4689#4690#0" expanded="true" />
-            <element signature="e#4722#4723#0" expanded="true" />
+            <element signature="e#6212#6213#0" expanded="true" />
+            <element signature="e#6246#6247#0" expanded="true" />
+            <element signature="e#6298#6299#0" expanded="true" />
+            <element signature="e#6331#6332#0" expanded="true" />
           </folding>
         </state>
       </provider>

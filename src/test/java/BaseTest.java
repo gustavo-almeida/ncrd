@@ -73,6 +73,43 @@ public class BaseTest{
         Assert.assertTrue(driver.findElementByAccessibilityId("iphone-logo").isDisplayed());
     }
 
+    @Test
+    public void ValidarPaginaTelefones(){
+        driver.findElementByAccessibilityId("ico phone").click();
+        Assert.assertTrue(driver.findElementByAccessibilityId("Dúvidas ou sugestões").isDisplayed());
+        Assert.assertTrue(driver.findElementByAccessibilityId("Suporte Técnico").isDisplayed());
+        Assert.assertTrue(driver.findElementByAccessibilityId("Ouvidoria Unicred").isDisplayed());
+    }
+
+    @Test
+    public void ValidarAgenciasProximas()
+    {
+        driver.findElementByAccessibilityId("ico near").click();
+        Assert.assertTrue(driver.findElementByName("Agências").isDisplayed());
+    }
+
+    @Test
+    public void BuscarAgencia()
+    {
+        driver.findElementByAccessibilityId("ico near").click();
+        IOSElement buscaAgencia = driver.findElementByName("Busque por cidade, estado ou endereço");
+        buscaAgencia.click();
+        buscaAgencia.sendKeys("Nova Igua");
+        Assert.assertTrue(driver.findElementByAccessibilityId("4509 - Unicred Serra Mar").isDisplayed());
+    }
+
+    @Test
+    public void AcessarAgenciaBuscada()
+    {
+        driver.findElementByAccessibilityId("ico near").click();
+        IOSElement buscaAgencia = driver.findElementByName("Busque por cidade, estado ou endereço");
+        buscaAgencia.click();
+        buscaAgencia.sendKeys("Nova Igua");
+        driver.findElementByAccessibilityId("4509 - Unicred Serra Mar").click();
+        Assert.assertTrue(driver.findElementByAccessibilityId("Unicred Serra Mar").isDisplayed());
+        Assert.assertTrue(driver.findElementByAccessibilityId("VER NO MAPA").isDisplayed());
+    }
+
     @BeforeMethod
     public void beforeTest()
     {
