@@ -5,10 +5,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -18,24 +15,44 @@ public class BaseTest{
 
     static IOSDriver<IOSElement>driver;
 
+
     @Test
-    public void Unicred(){
+    public void Login(){
         driver.findElementByName("ACESSE SUA CONTA").click();
-
         driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField").sendKeys("julia");
-
         driver.findElementByName("CONTINUAR").click();
-
         driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField").sendKeys("515");
-
         driver.findElementByName("CONTINUAR").click();
-
         driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField").sendKeys("938564");
-
         driver.findElementByName("CONTINUAR").click();
-
         driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        driver.findElementByName("CONTINUAR").click();
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        Assert.assertTrue(driver.findElementByAccessibilityId("Unicred.Home_v").isDisplayed());
+    }
 
+    @Test
+    public void Logout(){
+        driver.findElementByName("ACESSE SUA CONTA").click();
+        driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField").sendKeys("julia");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField").sendKeys("515");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField").sendKeys("938564");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField").sendKeys("1122");
         driver.findElementByName("CONTINUAR").click();
         try {
             Thread.sleep(5000);
@@ -53,6 +70,19 @@ public class BaseTest{
         driver.findElementByName("menu").click();
         driver.findElementByName("logout").click();
         driver.findElementByName("Sair").click();
+        Assert.assertTrue(driver.findElementByAccessibilityId("iphone-logo").isDisplayed());
+    }
+
+    @BeforeMethod
+    public void beforeTest()
+    {
+        driver.launchApp();
+    }
+
+    @AfterMethod
+    public void afterTest()
+    {
+        driver.closeApp();
     }
 
     @Parameters({ "deviceName_", "platformName_", "deviceId_", "URL_" })
@@ -71,9 +101,9 @@ public class BaseTest{
         }
         else {
             cap.setCapability(MobileCapabilityType.UDID, deviceId_);
-            cap.setCapability(MobileCapabilityType.APP, "/Users/device/Unicred_novo.app");
-            cap.setCapability(MobileCapabilityType.FULL_RESET, false);
-            cap.setCapability(MobileCapabilityType.NO_RESET, true);
+            cap.setCapability(MobileCapabilityType.APP, "/Users/device/Unicred.app");
+            //cap.setCapability(MobileCapabilityType.FULL_RESET, false);
+            //cap.setCapability(MobileCapabilityType.NO_RESET, true);
         }
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName_);
         cap.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName_);
