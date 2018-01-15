@@ -63,6 +63,78 @@ public class BaseTest{
     }
 
     @Test
+    public void ValidarAcessoComFavoritos(){
+
+        //Login com Julia
+        driver.findElementByName("ACESSE SUA CONTA").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("julia");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("515");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("938564");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByName("CONTINUAR").click();
+
+        //Logout
+        driver.findElementByName("menu").click();
+        driver.findElementByName("logout").click();
+        driver.findElementByName("Sair").click();
+
+        driver.findElementByAccessibilityId("ENTRAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        Assert.assertTrue(driver.findElementByAccessibilityId("Unicred.Home_v").isDisplayed());
+    }
+
+    @Test
+    public void ValidarAcessoComSegundaContaFavoritosTODO(){
+
+        //Login com Julia
+        driver.findElementByName("ACESSE SUA CONTA").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("julia");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("515");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("938564");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByName("CONTINUAR").click();
+
+        //Logout
+        driver.findElementByName("menu").click();
+        driver.findElementByName("logout").click();
+        driver.findElementByName("Sair").click();
+
+        //Login com outra conta Olga
+        driver.findElementByAccessibilityId("Acessar outra conta").click();
+        driver.findElementByXPath("//XCUIElementTypeButton[@name=\"ACESSAR OUTRA CONTA\"]").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("olga");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("515");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("75825");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByName("CONTINUAR").click();
+
+        //Logout
+        driver.findElementByName("menu").click();
+        driver.findElementByName("logout").click();
+        driver.findElementByName("Sair").click();
+
+        driver.findElementByAccessibilityId("Acessar outra conta").click();
+        driver.findElementByAccessibilityId("julia").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        Assert.assertTrue(driver.findElementByAccessibilityId("Unicred.Home_v").isDisplayed());
+    }
+
+
+    @Test
     public void Logout(){
         driver.findElementByName("ACESSE SUA CONTA").click();
         driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("julia");
