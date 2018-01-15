@@ -17,15 +17,19 @@ public class BaseTest{
 
 
     @Test
-    public void Login(){
+    public void ValidarAcessoComDadosCorretos(){
         driver.findElementByName("ACESSE SUA CONTA").click();
-        driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField").sendKeys("julia");
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("julia");
+        //driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField").sendKeys("julia");
         driver.findElementByName("CONTINUAR").click();
-        driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField").sendKeys("515");
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("515");
+        //driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField").sendKeys("515");
         driver.findElementByName("CONTINUAR").click();
-        driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField").sendKeys("938564");
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("938564");
+        //driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField").sendKeys("938564");
         driver.findElementByName("CONTINUAR").click();
-        driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        //driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField").sendKeys("1122");
         driver.findElementByName("CONTINUAR").click();
         try {
             Thread.sleep(5000);
@@ -44,15 +48,30 @@ public class BaseTest{
     }
 
     @Test
+    public void ValidarAcessoComDadosIncorretos(){
+        driver.findElementByName("ACESSE SUA CONTA").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("notuser");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("519");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("932264");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1022");
+        driver.findElementByName("CONTINUAR").click();
+
+        Assert.assertEquals(driver.findElementByAccessibilityId("Conta, usuário ou senha inválidos.").getText(),"Conta, usuário ou senha inválidos.");
+    }
+
+    @Test
     public void Logout(){
         driver.findElementByName("ACESSE SUA CONTA").click();
-        driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField").sendKeys("julia");
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("julia");
         driver.findElementByName("CONTINUAR").click();
-        driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField").sendKeys("515");
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("515");
         driver.findElementByName("CONTINUAR").click();
-        driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField").sendKeys("938564");
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("938564");
         driver.findElementByName("CONTINUAR").click();
-        driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
         driver.findElementByName("CONTINUAR").click();
         try {
             Thread.sleep(5000);
