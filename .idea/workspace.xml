@@ -69,12 +69,12 @@
       <file leaf-file-name="BaseTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="77" column="54" lean-forward="true" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="54" />
+            <state relative-caret-position="283">
+              <caret line="125" column="51" lean-forward="true" selection-start-line="125" selection-start-column="51" selection-end-line="125" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#10236#10237#0" expanded="true" />
-                <element signature="e#10270#10271#0" expanded="true" />
+                <element signature="e#12205#12206#0" expanded="true" />
+                <element signature="e#12239#12240#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -371,24 +371,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BaseTest_Login - 2018.01.15 at 11h 34m 55s.xml">
-      <configuration name="BaseTest.Login" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.15 at 11h 38m 08s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.15 at 11h 42m 49s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.15 at 11h 48m 48s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.15 at 11h 51m 56s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.15 at 13h 10m 06s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.15 at 13h 22m 39s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
     </history-entry>
@@ -399,6 +381,24 @@
       <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.15 at 16h 39m 48s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.15 at 17h 01m 46s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.15 at 17h 17m 30s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.15 at 17h 19m 03s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.15 at 17h 20m 01s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.15 at 17h 23m 53s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.15 at 17h 24m 55s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -477,12 +477,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="77" column="54" lean-forward="true" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="54" />
+        <state relative-caret-position="283">
+          <caret line="125" column="51" lean-forward="true" selection-start-line="125" selection-start-column="51" selection-end-line="125" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10236#10237#0" expanded="true" />
-            <element signature="e#10270#10271#0" expanded="true" />
+            <element signature="e#12205#12206#0" expanded="true" />
+            <element signature="e#12239#12240#0" expanded="true" />
           </folding>
         </state>
       </provider>

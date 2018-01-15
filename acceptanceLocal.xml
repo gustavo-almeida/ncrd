@@ -10,7 +10,7 @@
         <classes>
             <class name="BaseTest">
             <!--<methods>-->
-                <!--<include name="ValidarAcessoComFavoritos" />-->
+                <!--<include name="ValidarAcessoSemSalvarDados" />-->
             <!--</methods>-->
             </class>
         </classes>

@@ -89,6 +89,47 @@ public class BaseTest{
     }
 
     @Test
+    public void ValidarAcessoSemFavoritos(){
+
+        //Login com Julia
+        driver.findElementByName("ACESSE SUA CONTA").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("olga");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("515");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("75825");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByName("CONTINUAR").click();
+        Assert.assertTrue(driver.findElementByAccessibilityId("Unicred.Home_v").isDisplayed());
+    }
+
+    @Test
+    public void ValidarAcessoSemSalvarDados(){
+
+        //Login com Julia
+        driver.findElementByName("ACESSE SUA CONTA").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("julia");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("515");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("938564");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByXPath("//*/XCUIElementTypeSwitch[1]").click();
+        driver.findElementByName("CONTINUAR").click();
+
+        //Logout
+        driver.findElementByName("menu").click();
+        driver.findElementByName("logout").click();
+        driver.findElementByName("Sair").click();
+
+        Assert.assertTrue(driver.findElementByName("ACESSE SUA CONTA").isDisplayed());
+    }
+
+    @Test
     public void ValidarAcessoComSegundaContaFavoritosTODO(){
 
         //Login com Julia
