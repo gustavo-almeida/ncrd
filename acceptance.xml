@@ -7,7 +7,11 @@
         <parameter name="deviceId_" value="5721493e919d21001e7bdfaa" />
         <parameter name="URL_" value="http://app.crashken.com/api/mobile/wd/hub" />
         <classes>
-            <class name="BaseTest" />
+            <class name="BaseTest" >
+                <!--<methods>-->
+                    <!--<include name="ValidarExclusaoDeFavoritos" />-->
+                <!--</methods>-->
+            </class>
         </classes>
     </test>
     <!--<test name="Test2">-->

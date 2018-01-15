@@ -1,3 +1,4 @@
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import io.appium.java_client.remote.AutomationName;
@@ -125,6 +126,40 @@ public class BaseTest{
         driver.findElementByName("menu").click();
         driver.findElementByName("logout").click();
         driver.findElementByName("Sair").click();
+
+        Assert.assertTrue(driver.findElementByName("ACESSE SUA CONTA").isDisplayed());
+    }
+
+    @Test
+    public void ValidarExclusaoDeFavoritos(){
+
+        //Login com Julia
+        driver.findElementByName("ACESSE SUA CONTA").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("julia");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("515");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("938564");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByName("CONTINUAR").click();
+
+        //Logout
+        driver.findElementByName("menu").click();
+        driver.findElementByName("logout").click();
+        driver.findElementByName("Sair").click();
+
+        driver.findElementByAccessibilityId("Acessar outra conta").click();
+
+        //Swipe to Delete
+        (new TouchAction(driver))
+                .press(254, 163)
+                .moveTo(-184, -3)
+                .release()
+                .perform();
+
+        driver.findElementByName("Apagar").click();
 
         Assert.assertTrue(driver.findElementByName("ACESSE SUA CONTA").isDisplayed());
     }
