@@ -4,6 +4,7 @@ import io.appium.java_client.ios.IOSElement;
 import io.appium.java_client.remote.AutomationName;
 import io.appium.java_client.remote.MobileCapabilityType;
 
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -152,12 +153,32 @@ public class BaseTest{
 
         driver.findElementByAccessibilityId("Acessar outra conta").click();
 
+        WebElement cc = driver.findElementByAccessibilityId("julia");
+
+        //Coordenadas da posição do elemento
+        int x_element = cc.getLocation().getX();
+        int y_element = cc.getLocation().getY();
+
+        //Coordenadas do toque inicial (press())
+        int x_inicial = cc.getSize().getWidth() - x_element;
+        int y_inicial = cc.getSize().getHeight() + y_element;
+
+        //Coordenadas do toque final (moveTo())
+        int x_final = x_inicial - (x_inicial + 200);
+        int y_final = 0;
+
         //Swipe to Delete
         (new TouchAction(driver))
+                .press(x_inicial, y_inicial)
+                .moveTo(x_final, y_final)
+                .release()
+                .perform();
+
+        /*(new TouchAction(driver))
                 .press(254, 163)
                 .moveTo(-184, -3)
                 .release()
-                .perform();
+                .perform();*/
 
         driver.findElementByName("Apagar").click();
 
