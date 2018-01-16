@@ -8,19 +8,23 @@
         <parameter name="URL_" value="http://app.crashken.com/api/mobile/wd/hub" />
         <classes>
             <class name="BaseTest" >
-                <!--<methods>-->
-                    <!--<include name="ValidarExclusaoDeFavoritos" />-->
-                <!--</methods>-->
+                <methods>
+                    <include name="ValidarPaginaTelefones" />
+                </methods>
             </class>
         </classes>
     </test>
-    <!--<test name="Test2">-->
-        <!--<parameter name="deviceName_" value="iPhone 6S" />-->
-        <!--<parameter name="platformName_" value="iOS" />-->
-        <!--<parameter name="deviceId_" value="5721493e919d21001e7bdffc" />-->
-        <!--<parameter name="URL_" value="http://app.crashken.com/api/mobile/wd/hub" />-->
-        <!--<classes>-->
-            <!--<class name="BaseTest" />-->
-        <!--</classes>-->
-    <!--</test>-->
+    <test name="Test2">
+        <parameter name="deviceName_" value="iPhone 5S Unicred" />
+        <parameter name="platformName_" value="iOS" />
+        <parameter name="deviceId_" value="5721493e919d21001e7bdfab" />
+        <parameter name="URL_" value="http://app.crashken.com/api/mobile/wd/hub" />
+        <classes>
+            <class name="BaseTest" >
+                <methods>
+                    <include name="ValidarPaginaTelefones" />
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>

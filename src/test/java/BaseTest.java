@@ -186,6 +186,60 @@ public class BaseTest{
     }
 
     @Test
+    public void ValidarOpcaoProximasAMim()
+    {
+        driver.findElementByAccessibilityId("ico near").click();
+        Assert.assertTrue(driver.findElementByName("Agências").isDisplayed());
+        //Assert.assertTrue(driver.findElementByName("3106 - PA UNIODONTO, Av Brasil, 200").isEnabled());
+    }
+
+    @Test
+    public void ValidarOpcaoProximasAMimVerNoMapa()
+    {
+        driver.findElementByAccessibilityId("ico near").click();
+        IOSElement buscaAgencia = driver.findElementByName("Busque por cidade, estado ou endereço");
+        buscaAgencia.click();
+        buscaAgencia.sendKeys("Nova Igua");
+        driver.findElementByAccessibilityId("4509 - Unicred Serra Mar").click();
+        driver.findElementByAccessibilityId("VER NO MAPA").click();
+        driver.findElementByAccessibilityId("Local").click();
+        Assert.assertTrue(driver.findElementByName("4509 - Unicred Serra Mar").isDisplayed());
+    }
+
+    @Test
+    public void ValidarBuscaAgenciaCEPValido()
+    {
+        driver.findElementByAccessibilityId("ico near").click();
+        IOSElement buscaAgencia = driver.findElementByName("Busque por cidade, estado ou endereço");
+        buscaAgencia.click();
+        buscaAgencia.sendKeys("90560030");
+        driver.findElementByAccessibilityId("2708 - UN HMV").click();
+        Assert.assertTrue(driver.findElementByAccessibilityId("UN HMV").isDisplayed());
+        Assert.assertTrue(driver.findElementByAccessibilityId("VER NO MAPA").isDisplayed());
+    }
+
+    @Test
+    public void ValidarBuscaAgenciaEnderecoValido()
+    {
+        driver.findElementByAccessibilityId("ico near").click();
+        IOSElement buscaAgencia = driver.findElementByName("Busque por cidade, estado ou endereço");
+        buscaAgencia.click();
+        buscaAgencia.sendKeys("Nova Igua");
+        driver.findElementByAccessibilityId("4509 - Unicred Serra Mar").click();
+        driver.findElementByAccessibilityId("VER NO MAPA").click();
+        driver.findElementByAccessibilityId("Local").click();
+        Assert.assertTrue(driver.findElementByName("4509 - Unicred Serra Mar").isDisplayed());
+    }
+
+    @Test
+    public void ValidarPaginaTelefones(){
+        driver.findElementByAccessibilityId("ico phone").click();
+        Assert.assertTrue(driver.findElementByAccessibilityId("Dúvidas ou sugestões").isDisplayed());
+        Assert.assertTrue(driver.findElementByAccessibilityId("Suporte Técnico").isDisplayed());
+        Assert.assertTrue(driver.findElementByAccessibilityId("Ouvidoria Unicred").isDisplayed());
+    }
+
+    @Test
     public void ValidarAcessoComSegundaContaFavoritosTODO(){
 
         //Login com Julia
@@ -259,31 +313,6 @@ public class BaseTest{
         driver.findElementByName("logout").click();
         driver.findElementByName("Sair").click();
         Assert.assertTrue(driver.findElementByAccessibilityId("iphone-logo").isDisplayed());
-    }
-
-    @Test
-    public void ValidarPaginaTelefones(){
-        driver.findElementByAccessibilityId("ico phone").click();
-        Assert.assertTrue(driver.findElementByAccessibilityId("Dúvidas ou sugestões").isDisplayed());
-        Assert.assertTrue(driver.findElementByAccessibilityId("Suporte Técnico").isDisplayed());
-        Assert.assertTrue(driver.findElementByAccessibilityId("Ouvidoria Unicred").isDisplayed());
-    }
-
-    @Test
-    public void ValidarAgenciasProximas()
-    {
-        driver.findElementByAccessibilityId("ico near").click();
-        Assert.assertTrue(driver.findElementByName("Agências").isDisplayed());
-    }
-
-    @Test
-    public void BuscarAgencia()
-    {
-        driver.findElementByAccessibilityId("ico near").click();
-        IOSElement buscaAgencia = driver.findElementByName("Busque por cidade, estado ou endereço");
-        buscaAgencia.click();
-        buscaAgencia.sendKeys("Nova Igua");
-        Assert.assertTrue(driver.findElementByAccessibilityId("4509 - Unicred Serra Mar").isDisplayed());
     }
 
     @Test
