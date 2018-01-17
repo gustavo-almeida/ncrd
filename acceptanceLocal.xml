@@ -8,24 +8,26 @@
         <parameter name="deviceId_" value="959C979D-C43A-4845-B3B9-D54D999D7D20" />
         <parameter name="URL_" value="http://127.0.0.1:4723/wd/hub" />
         <classes>
-            <class name="Login">
-                <!--<methods>
-                    <include name="ErrarSenhaTresVezesValidarBloqueio" />
-                </methods>-->
+            <!--<class name="Login"/>-->
+            <class name="Cpav">
+                <methods>
+                    <include name="ValidarOpcaoSolicitar"/>
+                </methods>
             </class>
         </classes>
     </test>
-    <test name="Test2">
+    <!--<test name="Test2">
         <parameter name="deviceName_" value="iPhone 6" />
         <parameter name="wdaLocalPort_" value="8003" />
         <parameter name="deviceId_" value="5C2D5D99-7898-4289-901D-1CF31880FAA1" />
         <parameter name="URL_" value="http://127.0.0.1:4723/wd/hub" />
         <classes>
-            <class name="Login">
-                <!--<methods>
-                    <include name="ValidarPaginaTelefones" />
-                </methods>-->
+            &lt;!&ndash;<class name="Login"/>&ndash;&gt;
+            <class name="Cpav">
+                <methods>
+                    <include name="ValidarOpcaoSolicitar"/>
+                </methods>
             </class>
         </classes>
-    </test>
+    </test>-->
 </suite>

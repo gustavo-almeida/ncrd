@@ -1,7 +1,6 @@
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.ios.IOSElement;
 
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -163,7 +162,7 @@ public class Login extends Base{
 
         driver.findElementByAccessibilityId("Acessar outra conta").click();
 
-        WebElement cc = driver.findElementByAccessibilityId("julia");
+        IOSElement cc = driver.findElementByAccessibilityId("julia");
 
         //Coordenadas da posição do elemento
         int x_element = cc.getLocation().getX();
