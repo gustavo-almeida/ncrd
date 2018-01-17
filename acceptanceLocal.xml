@@ -9,9 +9,9 @@
         <parameter name="URL_" value="http://127.0.0.1:4723/wd/hub" />
         <classes>
             <class name="Login">
-                <methods>
-                    <include name="ValidarPaginaTelefones" />
-                </methods>
+                <!--<methods>
+                    <include name="ErrarSenhaTresVezesValidarBloqueio" />
+                </methods>-->
             </class>
         </classes>
     </test>
@@ -22,9 +22,9 @@
         <parameter name="URL_" value="http://127.0.0.1:4723/wd/hub" />
         <classes>
             <class name="Login">
-                <methods>
+                <!--<methods>
                     <include name="ValidarPaginaTelefones" />
-                </methods>
+                </methods>-->
             </class>
         </classes>
     </test>

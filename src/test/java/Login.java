@@ -54,6 +54,27 @@ public class Login extends Base{
     }
 
     @Test
+    public void ErrarSenhaTresVezesValidarBloqueio()
+    {
+        for(int i=0; i<3; i++)
+        {
+            driver.findElementByName("ACESSE SUA CONTA").click();
+            driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("dalmo");
+            driver.findElementByName("CONTINUAR").click();
+            driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("515");
+            driver.findElementByName("CONTINUAR").click();
+            driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("75914");
+            driver.findElementByName("CONTINUAR").click();
+            driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1022");
+            driver.findElementByName("CONTINUAR").click();
+            if(i<2) {
+                driver.findElementByAccessibilityId("SAIR").click();
+            }
+        }
+        Assert.assertTrue(driver.findElementByAccessibilityId("Usuário Bloqueado. Contate o atendimento da sua cooperativa").isDisplayed());
+    }
+
+    @Test
     public void ValidarAcessoComFavoritos(){
 
         //Login com Julia
