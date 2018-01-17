@@ -8,11 +8,11 @@
         <parameter name="deviceId_" value="959C979D-C43A-4845-B3B9-D54D999D7D20" />
         <parameter name="URL_" value="http://127.0.0.1:4723/wd/hub" />
         <classes>
-            <!--<class name="Login"/>-->
+            <class name="Login"/>
             <class name="Cpav">
-                <methods>
-                    <include name="ValidarOpcaoSolicitar"/>
-                </methods>
+               <!-- <methods>
+                    <include name="ValidarOpcaoSimularContratacao"/>
+                </methods>-->
             </class>
         </classes>
     </test>
@@ -25,7 +25,7 @@
             &lt;!&ndash;<class name="Login"/>&ndash;&gt;
             <class name="Cpav">
                 <methods>
-                    <include name="ValidarOpcaoSolicitar"/>
+                    <include name="ValidarOpcaoSimularContratacao"/>
                 </methods>
             </class>
         </classes>
