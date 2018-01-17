@@ -10,7 +10,7 @@
         <classes>
             <class name="Login">
                 <methods>
-                    <include name="ErrarSenhaTresVezesValidarBloqueio" />
+                    <include name="ValidarPaginaTelefones" />
                 </methods>
             </class>
         </classes>
