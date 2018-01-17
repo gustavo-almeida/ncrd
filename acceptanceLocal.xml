@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<!--<suite name="Automation Test" parallel="tests" thread-count="1">-->
-<suite name="Automation Test">
+<suite name="Automation Test" parallel="tests" thread-count="2">
+<!--<suite name="Automation Test">-->
     <test name="Test1">
         <parameter name="deviceName_" value="iPhone X" />
-        <parameter name="platformName_" value="iOS" />
+        <parameter name="wdaLocalPort_" value="8002" />
         <parameter name="deviceId_" value="959C979D-C43A-4845-B3B9-D54D999D7D20" />
         <parameter name="URL_" value="http://127.0.0.1:4723/wd/hub" />
         <classes>
-            <class name="BaseTest">
-            <!--<methods>
-                <include name="ValidarPaginaTelefones" />
-            </methods>-->
+            <class name="Login">
+                <methods>
+                    <include name="ValidarPaginaTelefones" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test2">
+        <parameter name="deviceName_" value="iPhone 6" />
+        <parameter name="wdaLocalPort_" value="8003" />
+        <parameter name="deviceId_" value="5C2D5D99-7898-4289-901D-1CF31880FAA1" />
+        <parameter name="URL_" value="http://127.0.0.1:4723/wd/hub" />
+        <classes>
+            <class name="Login">
+                <methods>
+                    <include name="ValidarPaginaTelefones" />
+                </methods>
             </class>
         </classes>
     </test>
