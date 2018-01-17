@@ -11,7 +11,7 @@
             <!--<class name="Login"/>-->
             <class name="Cpav">
                 <methods>
-                    <include name="ValidarTodasAsOpcoesSliderDeEntrada"/>
+                    <include name="ValidarValorASerFinanciadoEValorDeEntradaTelaEntrada"/>
                 </methods>
             </class>
         </classes>
