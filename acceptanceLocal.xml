@@ -9,10 +9,11 @@
         <parameter name="URL_" value="http://127.0.0.1:4723/wd/hub" />
         <classes>
             <!--<class name="Login"/>-->
-            <class name="Cpav">
-                <methods>
-                    <include name="ValidarBotaoContinuarTelaDeParcelas"/>
-                </methods>
+            <!--<class name="Cpav"/>-->
+            <class name="Saldo">
+                    <methods>
+                        <include name="ValidarBotaoSairTelaDeSaldo"/>
+                    </methods>
             </class>
         </classes>
     </test>
@@ -23,11 +24,8 @@
         <parameter name="URL_" value="http://127.0.0.1:4723/wd/hub" />
         <classes>
             &lt;!&ndash;<class name="Login"/>&ndash;&gt;
-            <class name="Cpav">
-                <methods>
-                    <include name="ValidarValorBotaoContinuarTelaEntrada"/>
-                </methods>
-            </class>
+            &lt;!&ndash;<class name="Cpav"/>&ndash;&gt;
+            <class name="Saldo"/>
         </classes>
     </test>-->
 </suite>

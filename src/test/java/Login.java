@@ -7,7 +7,8 @@ import org.testng.annotations.*;
 public class Login extends Base{
 
     @Test
-    public void ValidarAcessoComDadosCorretos(){
+    public void ValidarAcessoComDadosCorretos()
+    {
         driver.findElementByName("ACESSE SUA CONTA").click();
         driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("julia");
         //driver.findElementByXPath("/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField").sendKeys("julia");
@@ -38,7 +39,8 @@ public class Login extends Base{
     }
 
     @Test
-    public void ValidarAcessoComDadosIncorretos(){
+    public void ValidarAcessoComDadosIncorretos()
+    {
         driver.findElementByName("ACESSE SUA CONTA").click();
         driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("notuser");
         driver.findElementByName("CONTINUAR").click();
@@ -74,7 +76,8 @@ public class Login extends Base{
     }
 
     @Test
-    public void ValidarAcessoComFavoritos(){
+    public void ValidarAcessoComFavoritos()
+    {
 
         //Login com Julia
         driver.findElementByName("ACESSE SUA CONTA").click();
@@ -100,7 +103,8 @@ public class Login extends Base{
     }
 
     @Test
-    public void ValidarAcessoSemFavoritos(){
+    public void ValidarAcessoSemFavoritos()
+    {
 
         //Login com Julia
         driver.findElementByName("ACESSE SUA CONTA").click();
@@ -117,7 +121,8 @@ public class Login extends Base{
     }
 
     @Test
-    public void ValidarAcessoSemSalvarDados(){
+    public void ValidarAcessoSemSalvarDados()
+    {
 
         //Login com Julia
         driver.findElementByName("ACESSE SUA CONTA").click();
@@ -141,7 +146,8 @@ public class Login extends Base{
     }
 
     @Test
-    public void ValidarExclusaoDeFavoritos(){
+    public void ValidarExclusaoDeFavoritos()
+    {
 
         //Login com Julia
         driver.findElementByName("ACESSE SUA CONTA").click();
@@ -241,7 +247,8 @@ public class Login extends Base{
     }
 
     @Test
-    public void ValidarPaginaTelefones(){
+    public void ValidarPaginaTelefones()
+    {
         driver.findElementByAccessibilityId("ico phone").click();
         Assert.assertTrue(driver.findElementByAccessibilityId("Dúvidas ou sugestões").isDisplayed());
         Assert.assertTrue(driver.findElementByAccessibilityId("Suporte Técnico").isDisplayed());
@@ -249,7 +256,8 @@ public class Login extends Base{
     }
 
     @Test
-    public void ValidarAcessoComSegundaContaFavoritosTODO(){
+    public void ValidarAcessoComSegundaContaFavoritosTODO()
+    {
 
         //Login com Julia
         driver.findElementByName("ACESSE SUA CONTA").click();
@@ -293,9 +301,9 @@ public class Login extends Base{
         Assert.assertTrue(driver.findElementByAccessibilityId("Unicred.Home_v").isDisplayed());
     }
 
-
     @Test
-    public void Logout(){
+    public void Logout()
+    {
         driver.findElementByName("ACESSE SUA CONTA").click();
         driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("julia");
         driver.findElementByName("CONTINUAR").click();
