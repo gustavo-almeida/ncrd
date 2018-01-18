@@ -25,6 +25,7 @@
         <classes>
             <class name="Login"/>
             <class name="Cpav"/>
+            <class name="Saldo"/>
             <!--<class name="Login">
                 <methods>
                     <include name="ValidarPaginaTelefones" />

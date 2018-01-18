@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29f79f91-edd1-4563-8bdd-1a3e55766eb3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Saldo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acceptance.xml" afterPath="$PROJECT_DIR$/acceptance.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acceptanceLocal.xml" afterPath="$PROJECT_DIR$/acceptanceLocal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Base.java" afterPath="$PROJECT_DIR$/src/test/java/Base.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Cpav.java" afterPath="$PROJECT_DIR$/src/test/java/Cpav.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Login.java" afterPath="$PROJECT_DIR$/src/test/java/Login.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,8 +21,8 @@
       <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="328" column="8" lean-forward="false" selection-start-line="328" selection-start-column="8" selection-end-line="331" selection-end-column="92" />
+            <state relative-caret-position="254">
+              <caret line="335" column="0" lean-forward="false" selection-start-line="335" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ValidarAcessoComDadosCorretos#0;class#Login#0" expanded="false" />
@@ -40,6 +38,7 @@
                 <element signature="method#ValidarBuscaAgenciaEnderecoValido#0;class#Login#0" expanded="false" />
                 <element signature="method#ValidarPaginaTelefones#0;class#Login#0" expanded="false" />
                 <element signature="method#ValidarAcessoComSegundaContaFavoritosTODO#0;class#Login#0" expanded="false" />
+                <element signature="method#Logout#0;class#Login#0" expanded="false" />
                 <element signature="method#AcessarAgenciaBuscada#0;class#Login#0" expanded="false" />
               </folding>
             </state>
@@ -49,11 +48,14 @@
       <file leaf-file-name="Cpav.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Cpav.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="595" column="5" lean-forward="true" selection-start-line="595" selection-start-column="5" selection-end-line="595" selection-end-column="5" />
+            <state relative-caret-position="298">
+              <caret line="114" column="45" lean-forward="false" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ValidarOpcaoSolicitarTelaInicial#0;class#Cpav#0" expanded="false" />
+                <element signature="method#ValidarCardPrincipalEMenuLateral#0;class#Cpav#0" expanded="false" />
+                <element signature="method#ValidarOpcaoVoltarDaTelaInicial#0;class#Cpav#0" expanded="false" />
+                <element signature="method#ValidarOpcaoSairDaTelaInicial#0;class#Cpav#0" expanded="false" />
                 <element signature="method#ValidarOpcaoSairQueEncerraAAplicacaoTelaDadosDoVeiculo#0;class#Cpav#0" expanded="false" />
                 <element signature="method#ValidarTodasAsOpcoesSliderTelaDeEntrada#0;class#Cpav#0" expanded="false" />
                 <element signature="method#ValidarValorBotaoContinuarTelaEntrada#0;class#Cpav#0" expanded="false" />
@@ -62,17 +64,17 @@
                 <element signature="method#ValidarBotaoContinuarTelaDiaVencimento#0;class#Cpav#0" expanded="false" />
                 <element signature="method#ValidarSliderTelaDeParcelas#0;class#Cpav#0" expanded="false" />
                 <element signature="method#ValidarBotaoContinuarTelaDeParcelas#0;class#Cpav#0" expanded="false" />
-                <marker date="1516281144000" expanded="false" signature="2214:4975" ph="{...}" />
+                <marker date="1516303852000" expanded="false" signature="7028:9789" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Saldo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Saldo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Saldo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="54" column="43" lean-forward="false" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="43" />
+            <state relative-caret-position="255">
+              <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ValidarPosicaoDosSubmenus#0;class#Saldo#0" expanded="false" />
@@ -96,18 +98,18 @@
       <file leaf-file-name="acceptance.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/acceptance.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="20" column="66" lean-forward="true" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
+            <state relative-caret-position="286">
+              <caret line="30" column="61" lean-forward="true" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="acceptanceLocal.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="acceptanceLocal.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/acceptanceLocal.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="29" selection-end-column="14" />
+            <state relative-caret-position="183">
+              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="17" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -138,12 +140,12 @@
         <option value="$PROJECT_DIR$/src/test/java/Utils.java" />
         <option value="$MAVEN_REPOSITORY$/org/testng/testng/6.13.1/testng-6.13.1.jar!/org/testng/internal/Invoker.class" />
         <option value="$PROJECT_DIR$/src/test/java/BaseTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Cpav.java" />
         <option value="$PROJECT_DIR$/src/test/java/Base.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Saldo.java" />
         <option value="$PROJECT_DIR$/acceptance.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Login.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Cpav.java" />
         <option value="$PROJECT_DIR$/acceptanceLocal.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Saldo.java" />
       </list>
     </option>
   </component>
@@ -412,9 +414,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.18 at 11h 48m 49s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.18 at 15h 10m 56s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
     </history-entry>
@@ -427,8 +426,8 @@
     <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.18 at 15h 42m 51s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptance_xml - 2018.01.18 at 12h 12m 49s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptance.xml" configurationId="TestNG" />
+    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.18 at 17h 33m 46s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptance_xml - 2018.01.18 at 12h 22m 42s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/acceptance.xml" configurationId="TestNG" />
@@ -440,6 +439,9 @@
       <configuration name="/Users/device/Documents/GitHub/ncrd/acceptance.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptance_xml - 2018.01.18 at 14h 44m 35s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptance.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptance_xml - 2018.01.18 at 17h 20m 16s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/acceptance.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -456,7 +458,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39300135" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35666218" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -504,6 +506,7 @@
             <element signature="method#ValidarBuscaAgenciaEnderecoValido#0;class#Login#0" expanded="false" />
             <element signature="method#ValidarPaginaTelefones#0;class#Login#0" expanded="false" />
             <element signature="method#ValidarAcessoComSegundaContaFavoritosTODO#0;class#Login#0" expanded="false" />
+            <element signature="method#Logout#0;class#Login#0" expanded="false" />
             <element signature="method#AcessarAgenciaBuscada#0;class#Login#0" expanded="false" />
           </folding>
         </state>
@@ -528,6 +531,7 @@
             <element signature="method#ValidarBuscaAgenciaEnderecoValido#0;class#Login#0" expanded="false" />
             <element signature="method#ValidarPaginaTelefones#0;class#Login#0" expanded="false" />
             <element signature="method#ValidarAcessoComSegundaContaFavoritosTODO#0;class#Login#0" expanded="false" />
+            <element signature="method#Logout#0;class#Login#0" expanded="false" />
             <element signature="method#AcessarAgenciaBuscada#0;class#Login#0" expanded="false" />
           </folding>
         </state>
@@ -584,6 +588,7 @@
             <element signature="method#ValidarBuscaAgenciaEnderecoValido#0;class#Login#0" expanded="false" />
             <element signature="method#ValidarPaginaTelefones#0;class#Login#0" expanded="false" />
             <element signature="method#ValidarAcessoComSegundaContaFavoritosTODO#0;class#Login#0" expanded="false" />
+            <element signature="method#Logout#0;class#Login#0" expanded="false" />
             <element signature="method#AcessarAgenciaBuscada#0;class#Login#0" expanded="false" />
           </folding>
         </state>
@@ -684,38 +689,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Cpav.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="595" column="5" lean-forward="true" selection-start-line="595" selection-start-column="5" selection-end-line="595" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#ValidarOpcaoSolicitarTelaInicial#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarOpcaoSairQueEncerraAAplicacaoTelaDadosDoVeiculo#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarTodasAsOpcoesSliderTelaDeEntrada#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarValorBotaoContinuarTelaEntrada#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarValorASerFinanciadoEValorDeEntradaTelaEntrada#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarTodasAsOpcoesSliderTelaDiaDeVencimento#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarBotaoContinuarTelaDiaVencimento#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarSliderTelaDeParcelas#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarBotaoContinuarTelaDeParcelas#0;class#Cpav#0" expanded="false" />
-            <marker date="1516281144000" expanded="false" signature="2214:4975" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/acceptance.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="20" column="66" lean-forward="true" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="328" column="8" lean-forward="false" selection-start-line="328" selection-start-column="8" selection-end-line="331" selection-end-column="92" />
+        <state relative-caret-position="254">
+          <caret line="335" column="0" lean-forward="false" selection-start-line="335" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#ValidarAcessoComDadosCorretos#0;class#Login#0" expanded="false" />
@@ -731,29 +708,61 @@
             <element signature="method#ValidarBuscaAgenciaEnderecoValido#0;class#Login#0" expanded="false" />
             <element signature="method#ValidarPaginaTelefones#0;class#Login#0" expanded="false" />
             <element signature="method#ValidarAcessoComSegundaContaFavoritosTODO#0;class#Login#0" expanded="false" />
+            <element signature="method#Logout#0;class#Login#0" expanded="false" />
             <element signature="method#AcessarAgenciaBuscada#0;class#Login#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acceptanceLocal.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="29" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Saldo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="54" column="43" lean-forward="false" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="43" />
+        <state relative-caret-position="255">
+          <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#ValidarPosicaoDosSubmenus#0;class#Saldo#0" expanded="false" />
             <element signature="method#ValidarPosicaoVoltarTelaDeSaldo#0;class#Saldo#0" expanded="false" />
             <element signature="method#ValidarBotaoSairTelaDeSaldo#0;class#Saldo#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptance.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="30" column="61" lean-forward="true" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Cpav.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="114" column="45" lean-forward="false" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ValidarOpcaoSolicitarTelaInicial#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarCardPrincipalEMenuLateral#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarOpcaoVoltarDaTelaInicial#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarOpcaoSairDaTelaInicial#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarOpcaoSairQueEncerraAAplicacaoTelaDadosDoVeiculo#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarTodasAsOpcoesSliderTelaDeEntrada#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarValorBotaoContinuarTelaEntrada#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarValorASerFinanciadoEValorDeEntradaTelaEntrada#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarTodasAsOpcoesSliderTelaDiaDeVencimento#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarBotaoContinuarTelaDiaVencimento#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarSliderTelaDeParcelas#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarBotaoContinuarTelaDeParcelas#0;class#Cpav#0" expanded="false" />
+            <marker date="1516303852000" expanded="false" signature="7028:9789" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptanceLocal.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="17" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>

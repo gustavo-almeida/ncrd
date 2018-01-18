@@ -255,7 +255,7 @@ public class Login extends Base{
         Assert.assertTrue(driver.findElementByAccessibilityId("Ouvidoria Unicred").isDisplayed());
     }
 
-    @Test
+    @Test(enabled = false)
     public void ValidarAcessoComSegundaContaFavoritosTODO()
     {
 
@@ -301,7 +301,7 @@ public class Login extends Base{
         Assert.assertTrue(driver.findElementByAccessibilityId("Unicred.Home_v").isDisplayed());
     }
 
-    @Test
+    @Test(enabled = false)
     public void Logout()
     {
         driver.findElementByName("ACESSE SUA CONTA").click();
@@ -332,7 +332,7 @@ public class Login extends Base{
         Assert.assertTrue(driver.findElementByAccessibilityId("iphone-logo").isDisplayed());
     }
 
-    @Test
+    @Test(enabled = false)
     public void AcessarAgenciaBuscada()
     {
         driver.findElementByAccessibilityId("ico near").click();

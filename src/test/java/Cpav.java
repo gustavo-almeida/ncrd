@@ -3,6 +3,8 @@ import io.appium.java_client.ios.IOSElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class Cpav extends Base {
 
     @Test
@@ -44,9 +46,119 @@ public class Cpav extends Base {
 
         Assert.assertTrue(driver.findElementByName("credito info").isDisplayed());
         Assert.assertTrue(driver.findElementByAccessibilityId("R$ 100.000,00").isDisplayed());
+        Assert.assertTrue(driver.findElementByAccessibilityId("Solicitar").isDisplayed());
+    }
 
-        driver.findElementByAccessibilityId("Solicitar").click();
-        driver.findElementByAccessibilityId("INFORMAÇÕES SOBRE O VEÍCULO").isDisplayed();
+    @Test
+    public void ValidarCardPrincipalEMenuLateral()
+    {
+        driver.findElementByName("ACESSE SUA CONTA").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("juliano");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("590");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("92819");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByName("CONTINUAR").click();
+
+        //Verifica o Card Principal
+        Assert.assertTrue(driver.findElementByAccessibilityId("Crédito").isDisplayed());
+        driver.findElementByName("menu").click();
+
+        //Verifica a opção no Menu Lateral
+        Assert.assertTrue(driver.findElementByAccessibilityId("Crédito").isDisplayed());
+    }
+
+    @Test
+    public void ValidarOpcaoVoltarDaTelaInicial()
+    {
+        driver.findElementByName("ACESSE SUA CONTA").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("juliano");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("590");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("92819");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByName("CONTINUAR").click();
+
+        IOSElement banner = driver.findElementByXPath("//*/XCUIElementTypeCell/XCUIElementTypeOther[2]");
+
+        //Coordenadas da posição do elemento
+        int x_element = banner.getLocation().getX();
+        int y_element = banner.getLocation().getY();
+
+        //Coordenadas do toque inicial (press())
+        int x_inicial = banner.getSize().getWidth() - x_element;
+        int y_inicial = banner.getSize().getHeight() + y_element;
+
+        //Coordenadas do toque final (moveTo())
+        int x_final = x_inicial - (x_inicial + 300);
+        int y_final = 0;
+
+        //Swipe to Delete
+        (new TouchAction(driver))
+                .press(x_inicial, y_inicial)
+                .moveTo(x_final, y_final)
+                .release()
+                .perform();
+
+        driver.findElementByAccessibilityId("fun-credit-offer-vehicles").click();
+
+        driver.findElementByAccessibilityId("Voltar").click();
+        Assert.assertTrue(driver.findElementByAccessibilityId("Unicred.Home_v").isDisplayed());    }
+
+    @Test
+    public void ValidarOpcaoSairDaTelaInicial()
+    {
+        driver.findElementByName("ACESSE SUA CONTA").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("juliano");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("590");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("92819");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByName("CONTINUAR").click();
+
+        IOSElement banner = driver.findElementByXPath("//*/XCUIElementTypeCell/XCUIElementTypeOther[2]");
+
+        //Coordenadas da posição do elemento
+        int x_element = banner.getLocation().getX();
+        int y_element = banner.getLocation().getY();
+
+        //Coordenadas do toque inicial (press())
+        int x_inicial = banner.getSize().getWidth() - x_element;
+        int y_inicial = banner.getSize().getHeight() + y_element;
+
+        //Coordenadas do toque final (moveTo())
+        int x_final = x_inicial - (x_inicial + 300);
+        int y_final = 0;
+
+        //Swipe to Delete
+        (new TouchAction(driver))
+                .press(x_inicial, y_inicial)
+                .moveTo(x_final, y_final)
+                .release()
+                .perform();
+
+        driver.findElementByAccessibilityId("fun-credit-offer-vehicles").click();
+
+        //Logout
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        driver.findElementByName("menu").click();
+        driver.findElementByName("logout").click();
+        driver.findElementByName("Sair").click();
+        Assert.assertTrue(driver.findElementByAccessibilityId("iphone-logo").isDisplayed());
     }
 
     @Test
