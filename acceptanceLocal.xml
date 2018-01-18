@@ -11,7 +11,7 @@
             <!--<class name="Login"/>-->
             <class name="Cpav">
                 <methods>
-                    <include name="ValidarValorASerFinanciadoEValorDeEntradaTelaEntrada"/>
+                    <include name="ValidarValorBotaoContinuarTelaEntrada"/>
                 </methods>
             </class>
         </classes>
@@ -25,7 +25,7 @@
             &lt;!&ndash;<class name="Login"/>&ndash;&gt;
             <class name="Cpav">
                 <methods>
-                    <include name="ValidarOpcaoSimularContratacao"/>
+                    <include name="ValidarValorBotaoContinuarTelaEntrada"/>
                 </methods>
             </class>
         </classes>
