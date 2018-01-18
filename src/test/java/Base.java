@@ -39,7 +39,7 @@ public class Base {
             cap.setCapability("executionName", "Unicred - iOS");
 
             //cap.setCapability(MobileCapabilityType.APP, "http://app.crashken.com/UICatalog.ipa");
-            cap.setCapability(MobileCapabilityType.APP, "https://crashken.blob.core.windows.net/crashken-5a3427da3183d01952159254/public/apps/5a3427da3183d01952159254/5a3427da3183d01952159255/682cc8ed-147d-48ce-b1d8-9b6d5f1a10c8.ipa");
+            cap.setCapability(MobileCapabilityType.APP, "https://crashken.blob.core.windows.net/crashken-5a3427da3183d01952159254/public/apps/5a3427da3183d01952159254/5a3427da3183d01952159255/eea4777c-29b7-4d15-96eb-243a44c7ebcd.ipa");
         }
         else {
             cap.setCapability(MobileCapabilityType.UDID, deviceId_);
