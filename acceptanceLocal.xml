@@ -9,15 +9,12 @@
         <parameter name="URL_" value="http://127.0.0.1:4723/wd/hub" />
         <classes>
             <!--<class name="Login"/>-->
-            <!--<class name="Saldo"/>-->
-            <class name="Cpav">
-                    <methods>
-                        <include name="ValidarOpcaoSolicitarTelaInicial"/>
-                        <include name="ValidarOpcaoVoltarDaTelaInicial"/>
-                        <include name="ValidarCardPrincipalEMenuLateral"/>
-                        <include name="ValidarOpcaoSairDaTelaInicial"/>
-                    </methods>
+            <class name="Saldo">
+                <methods>
+                    <include name="ValidarPosicaoVoltarTelaDeSaldo"/>
+                </methods>
             </class>
+            <!--<class name="Cpav"/>-->
         </classes>
     </test>
     <!--<test name="Test2">

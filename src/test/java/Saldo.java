@@ -21,9 +21,16 @@ public class Saldo extends Base {
 
         driver.findElementByAccessibilityId("Saldo").click();
 
+        //Aguarda carregamento página de Saldo
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         IOSElement menuPosicaoConsolidada = driver.findElementByAccessibilityId("Seção Posição Consolidada");
         //Recolher seção Posição consolidada
-        if ("Fechado".equals(menuPosicaoConsolidada.getAttribute("value"))) {
+        if ("Aberto".equals(menuPosicaoConsolidada.getAttribute("value"))) {
             driver.findElementByAccessibilityId("Seção Posição Consolidada").click();
         }
         Assert.assertTrue(menuPosicaoConsolidada.isDisplayed());
@@ -46,6 +53,13 @@ public class Saldo extends Base {
         driver.findElementByName("CONTINUAR").click();
 
         driver.findElementByAccessibilityId("Saldo").click();
+
+        //Aguarda carregamento página de Saldo
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         driver.findElementByAccessibilityId("Voltar").click();
         Assert.assertTrue(driver.findElementByAccessibilityId("Unicred.Home_v").isDisplayed());
