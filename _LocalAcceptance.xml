@@ -9,12 +9,14 @@
         <parameter name="URL_" value="http://127.0.0.1:4723/wd/hub" />
         <classes>
             <!--<class name="Login"/>-->
-            <class name="Cpav">
+            <!--<class name="Cpav"/>-->
+            <!--<class name="Saldo"/>-->
+            <class name="Extrato">
                 <methods>
-                    <include name="ValidarBotaoContinuarTelaConfirmacaoDadosSolicitacao"/>
+                    <include name="ValidarExibicaoSubmenusExtratoELancamentosFuturosTelaInicial"/>
                 </methods>
             </class>
-            <!--<class name="Saldo"/>-->
+
         </classes>
     </test>
     <!--<test name="Test2">

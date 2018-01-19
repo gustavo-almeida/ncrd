@@ -1,12 +1,11 @@
-import io.appium.java_client.ios.IOSElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class Saldo extends Base {
+public class Extrato extends Base{
     @Test
-    public void ValidarPosicaoDosSubmenus()
+    public void ValidarExibicaoSubmenusExtratoELancamentosFuturosTelaInicial()
     {
         driver.findElementByName("ACESSE SUA CONTA").click();
         driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("julia");
@@ -19,27 +18,25 @@ public class Saldo extends Base {
         driver.findElementByName("CONTINUAR").click();
         driver.findElementByName("CONTINUAR").click();
 
-        driver.findElementByAccessibilityId("Saldo").click();
+        driver.findElementByAccessibilityId("Extratos").click();
 
-        //Aguarda carregamento página de Saldo
         try {
             TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        IOSElement menuPosicaoConsolidada = driver.findElementByAccessibilityId("Seção Posição Consolidada");
-        //Recolher seção Posição consolidada
-        if ("Aberto".equals(menuPosicaoConsolidada.getAttribute("value"))) {
-            driver.findElementByAccessibilityId("Seção Posição Consolidada").click();
-        }
-        Assert.assertTrue(menuPosicaoConsolidada.isDisplayed());
-        Assert.assertTrue(driver.findElementByAccessibilityId("Seção Horários e Limites").isDisplayed());
-        Assert.assertTrue(driver.findElementByAccessibilityId("Seção Lançamentos Futuros").isDisplayed());
+        //Valida se informação Extrato está sendo exibida
+        Assert.assertTrue(driver.findElementByXPath("//XCUIElementTypeOther[@name=\"Últimos 3 dias\"]").isDisplayed());
+
+        driver.findElementByAccessibilityId("LANÇAMENTOS FUTUROS").click();
+
+        //Valida se informação Lancamentos futuros está sendo exibida
+        Assert.assertTrue(driver.findElementByXPath("//XCUIElementTypeOther[@name=\"Próximos 3 dias\"]").isDisplayed());
     }
 
     @Test
-    public void ValidarPosicaoVoltarTelaInicial()
+    public void ValidarOpcaoVoltarTelaInicial()
     {
         driver.findElementByName("ACESSE SUA CONTA").click();
         driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("julia");
@@ -52,9 +49,8 @@ public class Saldo extends Base {
         driver.findElementByName("CONTINUAR").click();
         driver.findElementByName("CONTINUAR").click();
 
-        driver.findElementByAccessibilityId("Saldo").click();
+        driver.findElementByAccessibilityId("Extratos").click();
 
-        //Aguarda carregamento página de Saldo
         try {
             TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {
@@ -62,8 +58,7 @@ public class Saldo extends Base {
         }
 
         driver.findElementByAccessibilityId("Voltar").click();
-        Assert.assertTrue(driver.findElementByAccessibilityId("Unicred.Home_v").isDisplayed());
-    }
+        Assert.assertTrue(driver.findElementByAccessibilityId("Unicred.Home_v").isDisplayed());    }
 
     @Test
     public void ValidarBotaoSairTelaInicial()
@@ -79,7 +74,7 @@ public class Saldo extends Base {
         driver.findElementByName("CONTINUAR").click();
         driver.findElementByName("CONTINUAR").click();
 
-        driver.findElementByAccessibilityId("Saldo").click();
+        driver.findElementByAccessibilityId("Extratos").click();
 
         //Logout
         try {
@@ -91,6 +86,7 @@ public class Saldo extends Base {
         driver.findElementByName("menu").click();
         driver.findElementByName("logout").click();
         driver.findElementByName("Sair").click();
+
         Assert.assertTrue(driver.findElementByAccessibilityId("iphone-logo").isDisplayed());
     }
 }
