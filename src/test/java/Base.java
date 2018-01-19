@@ -18,6 +18,7 @@ public class Base {
     public void beforeTest()
     {
         driver.launchApp();
+        //driver.findElementByAccessibilityId("http://dcavm062hm024.e-unicred.com.br:8080/unicred-controller/unicred/controller/service").click();
     }
 
     @AfterMethod

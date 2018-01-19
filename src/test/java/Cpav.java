@@ -227,6 +227,78 @@ public class Cpav extends Base {
     }
 
     @Test
+    public void ValidarMenuLateralEOpcaoDeVoltarTelaInformacaoVeiculos()
+    {
+        driver.findElementByName("ACESSE SUA CONTA").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("juliano");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("590");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("92819");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByName("CONTINUAR").click();
+
+        IOSElement banner = driver.findElementByXPath("//*/XCUIElementTypeCell/XCUIElementTypeOther[2]");
+
+        //Coordenadas da posição do elemento
+        int x_element = banner.getLocation().getX();
+        int y_element = banner.getLocation().getY();
+
+        //Coordenadas do toque inicial (press())
+        int x_inicial = banner.getSize().getWidth() - x_element;
+        int y_inicial = banner.getSize().getHeight() + y_element;
+
+        //Coordenadas do toque final (moveTo())
+        int x_final = x_inicial - (x_inicial + 300);
+        int y_final = 0;
+
+        //Swipe to Delete
+        (new TouchAction(driver))
+                .press(x_inicial, y_inicial)
+                .moveTo(x_final, y_final)
+                .release()
+                .perform();
+
+        driver.findElementByAccessibilityId("fun-credit-offer-vehicles").click();
+        driver.findElementByAccessibilityId("Solicitar").click();
+
+        //Exibir Menu Lateral
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        //Exibir Menu Lateral
+        driver.findElementByName("menu").click();
+
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Assert.assertTrue(driver.findElementByAccessibilityId("Logo_Oficial_Unicred_iPhone").isDisplayed());
+
+        //Recolher Menu lateral
+        driver.findElementByXPath("//XCUIElementTypeApplication[@name=\"Homologação\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton").click();
+
+        //Aguarda recolhimento menu lateral
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        //Clicar em Voltar da página Crédito pré-aprovado
+        driver.findElementByXPath("//XCUIElementTypeButton[@name=\"Crédito Pré-Aprovado\"]").click();
+        Assert.assertTrue(driver.findElementByName("credito info").isDisplayed());
+        Assert.assertTrue(driver.findElementByAccessibilityId("R$ 100.000,00").isDisplayed());
+        Assert.assertTrue(driver.findElementByAccessibilityId("Solicitar").isDisplayed());    }
+
+    @Test
     public void ValidarOpcaoSairQueEncerraAAplicacaoTelaDadosDoVeiculo()
     {
         driver.findElementByName("ACESSE SUA CONTA").click();
