@@ -8,15 +8,11 @@
         <parameter name="deviceId_" value="959C979D-C43A-4845-B3B9-D54D999D7D20" />
         <parameter name="URL_" value="http://127.0.0.1:4723/wd/hub" />
         <classes>
-            <class name="Agendamentos">
-                <methods>
-                    <include name="ValidarAOpcaoSairQueEncerraAAplicacao"/>
-                </methods>
-            </class>
-            <!--<class name="Cpav"/>-->
-            <!--<class name="Extrato"/>-->
-            <!--<class name="Login"/>-->
-            <!--<class name="Saldo"/>-->
+            <class name="Agendamentos"/>
+            <class name="Cpav"/>
+            <class name="Extrato"/>
+            <class name="Login"/>
+            <class name="Saldo"/>
         </classes>
     </test>
     <!--<test name="Test2">

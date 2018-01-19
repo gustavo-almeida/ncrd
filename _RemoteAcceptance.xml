@@ -23,14 +23,11 @@
         <parameter name="deviceId_" value="5721493e919d21001e7bdfab" />
         <parameter name="URL_" value="http://app.crashken.com/api/mobile/wd/hub" />
         <classes>
-            <!--<class name="Login"/>-->
-            <!--<class name="Cpav"/>-->
+            <class name="Agendamentos"/>
+            <class name="Cpav"/>
+            <class name="Extrato"/>
+            <class name="Login"/>
             <class name="Saldo"/>
-            <!--<class name="Login">
-                <methods>
-                    <include name="ValidarPaginaTelefones" />
-                </methods>
-            </class>-->
         </classes>
     </test>
 </suite>

@@ -963,14 +963,95 @@ public class Cpav extends Base {
 
         //Vefifica valores iniciais de número e valor das parcelas
         Assert.assertTrue(driver.findElementByXPath("(//XCUIElementTypeStaticText[@name=\"48\"])[1]").isDisplayed());
-        Assert.assertTrue(driver.findElementByAccessibilityId("Valor da parcela: R$ 1.066,35").isDisplayed());
+        //Assert.assertTrue(driver.findElementByAccessibilityId("Valor da parcela: R$ 1.066,35").isDisplayed());
 
         //Muda Slider para 12 parcelas
         driver.findElementByClassName("XCUIElementTypeSlider").sendKeys("0.3");
 
         //Valida se o valor foi alterado com sucesso
         Assert.assertTrue(driver.findElementByAccessibilityId("12").isDisplayed());
-        Assert.assertTrue(driver.findElementByAccessibilityId("Valor da parcela: R$ 3.874,86").isDisplayed());
+        //Assert.assertTrue(driver.findElementByAccessibilityId("Valor da parcela: R$ 3.874,86").isDisplayed());
+    }
+
+    @Test
+    public void ValidarValorDaParcelaConformeParcelasEscolhidasTelaDeParcelas()
+    {
+        driver.findElementByName("ACESSE SUA CONTA").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("juliano");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("590");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("92819");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByName("CONTINUAR").click();
+
+        IOSElement banner = driver.findElementByXPath("//*/XCUIElementTypeCell/XCUIElementTypeOther[2]");
+
+        //Coordenadas da posição do elemento
+        int x_element = banner.getLocation().getX();
+        int y_element = banner.getLocation().getY();
+
+        //Coordenadas do toque inicial (press())
+        int x_inicial = banner.getSize().getWidth() - x_element;
+        int y_inicial = banner.getSize().getHeight() + y_element;
+
+        //Coordenadas do toque final (moveTo())
+        int x_final = x_inicial - (x_inicial + 300);
+        int y_final = 0;
+
+        //Swipe to Delete
+        (new TouchAction(driver))
+                .press(x_inicial, y_inicial)
+                .moveTo(x_final, y_final)
+                .release()
+                .perform();
+
+        driver.findElementByAccessibilityId("fun-credit-offer-vehicles").click();
+        driver.findElementByAccessibilityId("Solicitar").click();
+
+        ////////
+        //Preencher dados do Veículo
+        ////////
+
+        //Marca
+        driver.findElementByAccessibilityId("Marca").click();
+        driver.findElementByXPath("(//XCUIElementTypeSearchField[@name=\"Encontre o seu veículo\"])[1]").sendKeys("GM");
+        driver.findElementByAccessibilityId("GM - Chevrolet").click();
+
+        //Modelo
+        driver.findElementByAccessibilityId("Modelo").click();
+        driver.findElementByXPath("(//XCUIElementTypeSearchField[@name=\"Encontre o seu veículo\"])[1]").sendKeys("ONIX");
+        driver.findElementByAccessibilityId("ONIX HATCH ACTIV 1.4 8V Flex 5P Aut.").click();
+
+        //Ano Modelo / Combustível
+        driver.findElementByAccessibilityId("Ano Modelo / Combustível").click();
+        driver.findElementByAccessibilityId("2017 Gasolina").click();
+
+        //Valor de compra
+        driver.findElementByAccessibilityId("Valor de compra").click();
+        driver.getKeyboard().sendKeys("5999000");
+
+        driver.findElementByAccessibilityId("Simular contratação").click();
+
+        driver.findElementByAccessibilityId("Continuar").click();
+
+        //Muda Slider para o dia 15
+        driver.findElementByClassName("XCUIElementTypeSlider").sendKeys("0.5");
+
+        driver.findElementByAccessibilityId("Continuar").click();
+
+        //Vefifica valores iniciais de número e valor das parcelas
+        Assert.assertTrue(driver.findElementByXPath("(//XCUIElementTypeStaticText[@name=\"48\"])[1]").isDisplayed());
+        //Assert.assertTrue(driver.findElementByAccessibilityId("Valor da parcela: R$ 1.066,35").isDisplayed());
+
+        //Muda Slider para 24 parcelas
+        driver.findElementByClassName("XCUIElementTypeSlider").sendKeys("0.5");
+
+        //Valida se o valor foi alterado com sucesso
+        Assert.assertTrue(driver.findElementByAccessibilityId("24").isDisplayed());
+        //Assert.assertTrue(driver.findElementByAccessibilityId("Valor da parcela: R$ 2.000,80").isDisplayed());
     }
 
     @Test
