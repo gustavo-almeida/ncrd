@@ -11,7 +11,7 @@
             <!--<class name="Login"/>-->
             <class name="Cpav">
                 <methods>
-                    <include name="ValidarMenuLateralEOpcaoDeVoltarTelaInformacaoVeiculos"/>
+                    <include name="ValidarMenuLateralEOpcaoVoltarTelaDiaDeVencimento"/>
                 </methods>
             </class>
             <!--<class name="Saldo"/>-->

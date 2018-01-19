@@ -23,8 +23,8 @@
         <parameter name="deviceId_" value="5721493e919d21001e7bdfab" />
         <parameter name="URL_" value="http://app.crashken.com/api/mobile/wd/hub" />
         <classes>
-            <class name="Login"/>
-            <class name="Cpav"/>
+            <!--<class name="Login"/>-->
+            <!--<class name="Cpav"/>-->
             <class name="Saldo"/>
             <!--<class name="Login">
                 <methods>
