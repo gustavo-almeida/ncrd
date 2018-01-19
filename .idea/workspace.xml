@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29f79f91-edd1-4563-8bdd-1a3e55766eb3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Extrato.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Agendamentos.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_LocalAcceptance.xml" afterPath="$PROJECT_DIR$/_LocalAcceptance.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Saldo.java" afterPath="$PROJECT_DIR$/src/test/java/Saldo.java" />
@@ -21,7 +21,7 @@
       <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
+            <state relative-caret-position="102">
               <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -48,8 +48,8 @@
       <file leaf-file-name="Cpav.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Cpav.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="75" column="4" lean-forward="false" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
+            <state relative-caret-position="38">
+              <caret line="115" column="4" lean-forward="false" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ValidarOpcaoSolicitarTelaInicial#0;class#Cpav#0" expanded="false" />
@@ -79,13 +79,13 @@
       <file leaf-file-name="Saldo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Saldo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+            <state relative-caret-position="150">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ValidarPosicaoDosSubmenus#0;class#Saldo#0" expanded="false" />
-                <marker date="1516377008000" expanded="false" signature="1850:2948" ph="{...}" />
-                <marker date="1516377008000" expanded="false" signature="3010:4164" ph="{...}" />
+                <marker date="1516379922000" expanded="false" signature="1808:2906" ph="{...}" />
+                <marker date="1516379922000" expanded="false" signature="2968:4122" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -97,6 +97,19 @@
             <state relative-caret-position="150">
               <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Agendamentos.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Agendamentos.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding>
+                <element signature="method#ValidarExclusaoDeAgendamentos#0;class#Agendamentos#0" expanded="false" />
+                <element signature="method#ValidarSelecaoParaExclusaoENaoConfirmacaoDoRegistroSelecionado#0;class#Agendamentos#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,18 +127,18 @@
       <file leaf-file-name="_LocalAcceptance.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_LocalAcceptance.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="255">
+              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="29" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Extrato.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Extrato.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Extrato.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="63" column="43" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="43" />
+            <state relative-caret-position="180">
+              <caret line="60" column="100" lean-forward="true" selection-start-line="60" selection-start-column="100" selection-end-line="60" selection-end-column="100" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ValidarExibicaoSubmenusExtratoELancamentosFuturosTelaInicial#0;class#Extrato#0" expanded="false" />
@@ -144,6 +157,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>*</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -166,9 +184,10 @@
         <option value="$PROJECT_DIR$/acceptance.xml" />
         <option value="$PROJECT_DIR$/acceptanceLocal.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Cpav.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Saldo.java" />
         <option value="$PROJECT_DIR$/src/test/java/Extrato.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Saldo.java" />
         <option value="$PROJECT_DIR$/_LocalAcceptance.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Agendamentos.java" />
       </list>
     </option>
   </component>
@@ -440,35 +459,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 10h 30m 19s.xml">
+    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 15h 58m 55s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 10h 55m 43s.xml">
+    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 16h 00m 21s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 11h 39m 56s.xml">
+    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 16h 01m 07s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 11h 59m 25s.xml">
+    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 16h 04m 39s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 12h 01m 08s.xml">
+    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 16h 05m 59s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 12h 07m 03s.xml">
+    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 16h 22m 09s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 13h 53m 02s.xml">
+    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 16h 25m 10s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 13h 59m 27s.xml">
+    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 16h 27m 27s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptanceLocal_xml - 2018.01.19 at 10h 12m 18s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptanceLocal.xml" configurationId="TestNG" />
+    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 16h 28m 58s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd_acceptance_xml - 2018.01.19 at 10h 26m 43s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/acceptance.xml" configurationId="TestNG" />
+    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 16h 31m 57s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -495,7 +514,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39972714" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2422611" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -508,7 +527,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -715,17 +734,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Base.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
+        <state relative-caret-position="102">
           <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -748,10 +759,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Extrato.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="60" column="100" lean-forward="true" selection-start-line="60" selection-start-column="100" selection-end-line="60" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ValidarExibicaoSubmenusExtratoELancamentosFuturosTelaInicial#0;class#Extrato#0" expanded="false" />
+            <element signature="method#ValidarOpcaoVoltarTelaInicial#0;class#Extrato#0" expanded="false" />
+            <element signature="method#ValidarBotaoSairTelaInicial#0;class#Extrato#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Cpav.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="75" column="4" lean-forward="false" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
+        <state relative-caret-position="38">
+          <caret line="115" column="4" lean-forward="false" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#ValidarOpcaoSolicitarTelaInicial#0;class#Cpav#0" expanded="false" />
@@ -779,34 +803,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Saldo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+        <state relative-caret-position="150">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#ValidarPosicaoDosSubmenus#0;class#Saldo#0" expanded="false" />
-            <marker date="1516377008000" expanded="false" signature="1850:2948" ph="{...}" />
-            <marker date="1516377008000" expanded="false" signature="3010:4164" ph="{...}" />
+            <marker date="1516379922000" expanded="false" signature="1808:2906" ph="{...}" />
+            <marker date="1516379922000" expanded="false" signature="2968:4122" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Base.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_LocalAcceptance.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        <state relative-caret-position="255">
+          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="29" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Extrato.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Agendamentos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="63" column="43" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="43" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#ValidarExibicaoSubmenusExtratoELancamentosFuturosTelaInicial#0;class#Extrato#0" expanded="false" />
-            <element signature="method#ValidarOpcaoVoltarTelaInicial#0;class#Extrato#0" expanded="false" />
-            <element signature="method#ValidarBotaoSairTelaInicial#0;class#Extrato#0" expanded="false" />
+            <element signature="method#ValidarExclusaoDeAgendamentos#0;class#Agendamentos#0" expanded="false" />
+            <element signature="method#ValidarSelecaoParaExclusaoENaoConfirmacaoDoRegistroSelecionado#0;class#Agendamentos#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -8,15 +8,11 @@
         <parameter name="deviceId_" value="959C979D-C43A-4845-B3B9-D54D999D7D20" />
         <parameter name="URL_" value="http://127.0.0.1:4723/wd/hub" />
         <classes>
-            <!--<class name="Login"/>-->
-            <!--<class name="Cpav"/>-->
-            <!--<class name="Saldo"/>-->
-            <class name="Extrato">
-                <methods>
-                    <include name="ValidarExibicaoSubmenusExtratoELancamentosFuturosTelaInicial"/>
-                </methods>
-            </class>
-
+            <class name="Agendamentos"/>
+            <class name="Cpav"/>
+            <class name="Extrato"/>
+            <class name="Login"/>
+            <class name="Saldo"/>
         </classes>
     </test>
     <!--<test name="Test2">
@@ -25,8 +21,10 @@
         <parameter name="deviceId_" value="5C2D5D99-7898-4289-901D-1CF31880FAA1" />
         <parameter name="URL_" value="http://127.0.0.1:4723/wd/hub" />
         <classes>
-            &lt;!&ndash;<class name="Login"/>&ndash;&gt;
-            &lt;!&ndash;<class name="Cpav"/>&ndash;&gt;
+            <class name="Agendamentos"/>
+            <class name="Cpav"/>
+            <class name="Extrato"/>
+            <class name="Login"/>
             <class name="Saldo"/>
         </classes>
     </test>-->

@@ -31,7 +31,7 @@ public class Saldo extends Base {
         IOSElement menuPosicaoConsolidada = driver.findElementByAccessibilityId("Seção Posição Consolidada");
         //Recolher seção Posição consolidada
         if ("Aberto".equals(menuPosicaoConsolidada.getAttribute("value"))) {
-            driver.findElementByAccessibilityId("Seção Posição Consolidada").click();
+            menuPosicaoConsolidada.click();
         }
         Assert.assertTrue(menuPosicaoConsolidada.isDisplayed());
         Assert.assertTrue(driver.findElementByAccessibilityId("Seção Horários e Limites").isDisplayed());
