@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29f79f91-edd1-4563-8bdd-1a3e55766eb3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Agendamentos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_LocalAcceptance.xml" afterPath="$PROJECT_DIR$/_LocalAcceptance.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Saldo.java" afterPath="$PROJECT_DIR$/src/test/java/Saldo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Agendamentos.java" afterPath="$PROJECT_DIR$/src/test/java/Agendamentos.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Cpav.java" afterPath="$PROJECT_DIR$/src/test/java/Cpav.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,7 +20,7 @@
       <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="-165">
               <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -48,14 +47,13 @@
       <file leaf-file-name="Cpav.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Cpav.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="115" column="4" lean-forward="false" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="4" />
+            <state relative-caret-position="188">
+              <caret line="158" column="8" lean-forward="false" selection-start-line="158" selection-start-column="8" selection-end-line="161" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ValidarOpcaoSolicitarTelaInicial#0;class#Cpav#0" expanded="false" />
                 <element signature="method#ValidarCardPrincipalEMenuLateral#0;class#Cpav#0" expanded="false" />
                 <element signature="method#ValidarOpcaoVoltarDaTelaInicial#0;class#Cpav#0" expanded="false" />
-                <element signature="method#ValidarOpcaoSairDaTelaInicial#0;class#Cpav#0" expanded="false" />
                 <element signature="method#ValidarOpcaoSimularContratacaoTelaInformacaoVeiculos#0;class#Cpav#0" expanded="false" />
                 <element signature="method#ValidarMenuLateralEOpcaoDeVoltarTelaInformacaoVeiculos#0;class#Cpav#0" expanded="false" />
                 <element signature="method#ValidarOpcaoSairQueEncerraAAplicacaoTelaDadosDoVeiculo#0;class#Cpav#0" expanded="false" />
@@ -104,9 +102,13 @@
       <file leaf-file-name="Agendamentos.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Agendamentos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="405">
+              <caret line="211" column="0" lean-forward="true" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
               <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#ValidarExibicaoSubmenusProgramados#0;class#Agendamentos#0" expanded="false" />
+                <element signature="method#ValidarAOpcaoVoltarQueRetornaAoMenuPrincipal#0;class#Agendamentos#0" expanded="false" />
+                <element signature="method#ValidarAOpcaoSairQueEncerraAAplicacao#0;class#Agendamentos#0" expanded="false" />
                 <element signature="method#ValidarExclusaoDeAgendamentos#0;class#Agendamentos#0" expanded="false" />
                 <element signature="method#ValidarSelecaoParaExclusaoENaoConfirmacaoDoRegistroSelecionado#0;class#Agendamentos#0" expanded="false" />
               </folding>
@@ -127,8 +129,8 @@
       <file leaf-file-name="_LocalAcceptance.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_LocalAcceptance.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="29" selection-end-column="14" />
+            <state relative-caret-position="240">
+              <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -183,11 +185,11 @@
         <option value="$PROJECT_DIR$/src/test/java/Base.java" />
         <option value="$PROJECT_DIR$/acceptance.xml" />
         <option value="$PROJECT_DIR$/acceptanceLocal.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Cpav.java" />
         <option value="$PROJECT_DIR$/src/test/java/Extrato.java" />
         <option value="$PROJECT_DIR$/src/test/java/Saldo.java" />
-        <option value="$PROJECT_DIR$/_LocalAcceptance.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Cpav.java" />
         <option value="$PROJECT_DIR$/src/test/java/Agendamentos.java" />
+        <option value="$PROJECT_DIR$/_LocalAcceptance.xml" />
       </list>
     </option>
   </component>
@@ -459,15 +461,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 15h 58m 55s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 16h 00m 21s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 16h 01m 07s.xml">
-      <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 16h 04m 39s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
     </history-entry>
@@ -487,6 +480,15 @@
       <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 16h 31m 57s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 16h 42m 15s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 16h 45m 27s.xml">
+      <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_device_Documents_GitHub_ncrd__LocalAcceptance_xml - 2018.01.19 at 16h 47m 50s.xml">
       <configuration name="/Users/device/Documents/GitHub/ncrd/_LocalAcceptance.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -527,7 +529,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -734,31 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#ValidarAcessoComDadosCorretos#0;class#Login#0" expanded="false" />
-            <element signature="method#ValidarAcessoComDadosIncorretos#0;class#Login#0" expanded="false" />
-            <element signature="method#ErrarSenhaTresVezesValidarBloqueio#0;class#Login#0" expanded="false" />
-            <element signature="method#ValidarAcessoComFavoritos#0;class#Login#0" expanded="false" />
-            <element signature="method#ValidarAcessoSemFavoritos#0;class#Login#0" expanded="false" />
-            <element signature="method#ValidarAcessoSemSalvarDados#0;class#Login#0" expanded="false" />
-            <element signature="method#ValidarExclusaoDeFavoritos#0;class#Login#0" expanded="false" />
-            <element signature="method#ValidarOpcaoProximasAMim#0;class#Login#0" expanded="false" />
-            <element signature="method#ValidarOpcaoProximasAMimVerNoMapa#0;class#Login#0" expanded="false" />
-            <element signature="method#ValidarBuscaAgenciaCEPValido#0;class#Login#0" expanded="false" />
-            <element signature="method#ValidarBuscaAgenciaEnderecoValido#0;class#Login#0" expanded="false" />
-            <element signature="method#ValidarPaginaTelefones#0;class#Login#0" expanded="false" />
-            <element signature="method#ValidarAcessoComSegundaContaFavoritosTODO#0;class#Login#0" expanded="false" />
-            <element signature="method#Logout#0;class#Login#0" expanded="false" />
-            <element signature="method#AcessarAgenciaBuscada#0;class#Login#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Extrato.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -768,35 +745,6 @@
             <element signature="method#ValidarExibicaoSubmenusExtratoELancamentosFuturosTelaInicial#0;class#Extrato#0" expanded="false" />
             <element signature="method#ValidarOpcaoVoltarTelaInicial#0;class#Extrato#0" expanded="false" />
             <element signature="method#ValidarBotaoSairTelaInicial#0;class#Extrato#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Cpav.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="115" column="4" lean-forward="false" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#ValidarOpcaoSolicitarTelaInicial#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarCardPrincipalEMenuLateral#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarOpcaoVoltarDaTelaInicial#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarOpcaoSairDaTelaInicial#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarOpcaoSimularContratacaoTelaInformacaoVeiculos#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarMenuLateralEOpcaoDeVoltarTelaInformacaoVeiculos#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarOpcaoSairQueEncerraAAplicacaoTelaDadosDoVeiculo#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarTodasAsOpcoesSliderTelaDeEntrada#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarValorBotaoContinuarTelaEntrada#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarValorASerFinanciadoEValorDeEntradaTelaEntrada#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarMenuLateralEOpcaoDeVoltarTelaEntrada#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarTodasAsOpcoesSliderTelaDiaDeVencimento#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarMenuLateralEOpcaoVoltarTelaDiaDeVencimento#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarBotaoContinuarTelaDiaVencimento#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarSliderTelaDeParcelas#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarMenuLateralEOpcaoVoltarTelaDeParcelas#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarBotaoContinuarTelaDeParcelas#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarBotaoContinuarTelaConfirmacaoDadosSolicitacao#0;class#Cpav#0" expanded="false" />
-            <element signature="method#ValidarMenuLateralEOpcaoVoltarTelaConfirmacaoDadosSolicitacao#0;class#Cpav#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -822,19 +770,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-165">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ValidarAcessoComDadosCorretos#0;class#Login#0" expanded="false" />
+            <element signature="method#ValidarAcessoComDadosIncorretos#0;class#Login#0" expanded="false" />
+            <element signature="method#ErrarSenhaTresVezesValidarBloqueio#0;class#Login#0" expanded="false" />
+            <element signature="method#ValidarAcessoComFavoritos#0;class#Login#0" expanded="false" />
+            <element signature="method#ValidarAcessoSemFavoritos#0;class#Login#0" expanded="false" />
+            <element signature="method#ValidarAcessoSemSalvarDados#0;class#Login#0" expanded="false" />
+            <element signature="method#ValidarExclusaoDeFavoritos#0;class#Login#0" expanded="false" />
+            <element signature="method#ValidarOpcaoProximasAMim#0;class#Login#0" expanded="false" />
+            <element signature="method#ValidarOpcaoProximasAMimVerNoMapa#0;class#Login#0" expanded="false" />
+            <element signature="method#ValidarBuscaAgenciaCEPValido#0;class#Login#0" expanded="false" />
+            <element signature="method#ValidarBuscaAgenciaEnderecoValido#0;class#Login#0" expanded="false" />
+            <element signature="method#ValidarPaginaTelefones#0;class#Login#0" expanded="false" />
+            <element signature="method#ValidarAcessoComSegundaContaFavoritosTODO#0;class#Login#0" expanded="false" />
+            <element signature="method#Logout#0;class#Login#0" expanded="false" />
+            <element signature="method#AcessarAgenciaBuscada#0;class#Login#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Cpav.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="158" column="8" lean-forward="false" selection-start-line="158" selection-start-column="8" selection-end-line="161" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ValidarOpcaoSolicitarTelaInicial#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarCardPrincipalEMenuLateral#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarOpcaoVoltarDaTelaInicial#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarOpcaoSimularContratacaoTelaInformacaoVeiculos#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarMenuLateralEOpcaoDeVoltarTelaInformacaoVeiculos#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarOpcaoSairQueEncerraAAplicacaoTelaDadosDoVeiculo#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarTodasAsOpcoesSliderTelaDeEntrada#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarValorBotaoContinuarTelaEntrada#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarValorASerFinanciadoEValorDeEntradaTelaEntrada#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarMenuLateralEOpcaoDeVoltarTelaEntrada#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarTodasAsOpcoesSliderTelaDiaDeVencimento#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarMenuLateralEOpcaoVoltarTelaDiaDeVencimento#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarBotaoContinuarTelaDiaVencimento#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarSliderTelaDeParcelas#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarMenuLateralEOpcaoVoltarTelaDeParcelas#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarBotaoContinuarTelaDeParcelas#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarBotaoContinuarTelaConfirmacaoDadosSolicitacao#0;class#Cpav#0" expanded="false" />
+            <element signature="method#ValidarMenuLateralEOpcaoVoltarTelaConfirmacaoDadosSolicitacao#0;class#Cpav#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_LocalAcceptance.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="29" selection-end-column="14" />
+        <state relative-caret-position="240">
+          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Agendamentos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="405">
+          <caret line="211" column="0" lean-forward="true" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ValidarExibicaoSubmenusProgramados#0;class#Agendamentos#0" expanded="false" />
+            <element signature="method#ValidarAOpcaoVoltarQueRetornaAoMenuPrincipal#0;class#Agendamentos#0" expanded="false" />
+            <element signature="method#ValidarAOpcaoSairQueEncerraAAplicacao#0;class#Agendamentos#0" expanded="false" />
             <element signature="method#ValidarExclusaoDeAgendamentos#0;class#Agendamentos#0" expanded="false" />
             <element signature="method#ValidarSelecaoParaExclusaoENaoConfirmacaoDoRegistroSelecionado#0;class#Agendamentos#0" expanded="false" />
           </folding>

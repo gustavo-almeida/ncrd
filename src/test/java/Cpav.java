@@ -109,7 +109,8 @@ public class Cpav extends Base {
         driver.findElementByAccessibilityId("fun-credit-offer-vehicles").click();
 
         driver.findElementByAccessibilityId("Voltar").click();
-        Assert.assertTrue(driver.findElementByAccessibilityId("Unicred.Home_v").isDisplayed());    }
+        Assert.assertTrue(driver.findElementByAccessibilityId("Unicred.Home_v").isDisplayed());
+    }
 
     @Test
     public void ValidarOpcaoSairDaTelaInicial()

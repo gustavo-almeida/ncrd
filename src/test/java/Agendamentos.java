@@ -6,6 +6,102 @@ import java.util.concurrent.TimeUnit;
 
 public class Agendamentos extends Base{
     @Test
+    public void ValidarExibicaoSubmenusProgramados() throws InterruptedException
+    {
+        driver.findElementByName("ACESSE SUA CONTA").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("julia");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("515");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("938564");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByName("CONTINUAR").click();
+
+        //Acessar Card Agendamentos
+        driver.findElementByAccessibilityId("Agendamentos").click();
+
+        TimeUnit.SECONDS.sleep(3);
+
+        IOSElement secaoProgramados = driver.findElementByAccessibilityId("Seção Programados");
+        if("Fechado".equals(secaoProgramados.getAttribute("value")))
+        {
+            secaoProgramados.click();
+        }
+
+        TimeUnit.SECONDS.sleep(3);
+
+        Assert.assertTrue(driver.findElementByAccessibilityId("Dia").isDisplayed());
+        Assert.assertTrue(driver.findElementByAccessibilityId("Descrição").isDisplayed());
+        Assert.assertTrue(driver.findElementByAccessibilityId("Valor (R$)").isDisplayed());
+    }
+
+    @Test
+    public void ValidarAOpcaoVoltarQueRetornaAoMenuPrincipal() throws InterruptedException
+    {
+        driver.findElementByName("ACESSE SUA CONTA").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("julia");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("515");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("938564");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByName("CONTINUAR").click();
+
+        //Acessar Card Agendamentos
+        driver.findElementByAccessibilityId("Agendamentos").click();
+
+        TimeUnit.SECONDS.sleep(3);
+
+        IOSElement secaoProgramados = driver.findElementByAccessibilityId("Seção Programados");
+        if("Fechado".equals(secaoProgramados.getAttribute("value")))
+        {
+            secaoProgramados.click();
+        }
+
+        TimeUnit.SECONDS.sleep(3);
+
+        driver.findElementByAccessibilityId("Voltar").click();
+        Assert.assertTrue(driver.findElementByAccessibilityId("Unicred.Home_v").isDisplayed());
+    }
+
+    @Test
+    public void ValidarAOpcaoSairQueEncerraAAplicacao() throws InterruptedException
+    {
+        driver.findElementByName("ACESSE SUA CONTA").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("julia");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("515");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("938564");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByName("CONTINUAR").click();
+
+        //Acessar Card Agendamentos
+        driver.findElementByAccessibilityId("Agendamentos").click();
+
+        TimeUnit.SECONDS.sleep(3);
+
+        IOSElement secaoProgramados = driver.findElementByAccessibilityId("Seção Programados");
+        if("Fechado".equals(secaoProgramados.getAttribute("value")))
+        {
+            secaoProgramados.click();
+        }
+
+        TimeUnit.SECONDS.sleep(3);
+
+        driver.findElementByName("menu").click();
+        driver.findElementByName("logout").click();
+        driver.findElementByName("Sair").click();
+        Assert.assertTrue(driver.findElementByAccessibilityId("iphone-logo").isDisplayed());
+    }
+
+    @Test
     public void ValidarExclusaoDeAgendamentos() throws InterruptedException
     {
         driver.findElementByName("ACESSE SUA CONTA").click();
