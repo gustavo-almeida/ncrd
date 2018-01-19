@@ -11,7 +11,7 @@
             <!--<class name="Login"/>-->
             <class name="Cpav">
                 <methods>
-                    <include name="ValidarBotaoContinuarTelaDiaVencimento"/>
+                    <include name="ValidarBotaoContinuarTelaConfirmacaoDadosSolicitacao"/>
                 </methods>
             </class>
             <!--<class name="Saldo"/>-->

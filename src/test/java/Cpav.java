@@ -1151,4 +1151,195 @@ public class Cpav extends Base {
 
         Assert.assertTrue(driver.findElementByAccessibilityId("CONFIRA SEUS DADOS ANTES DE CONFIRMAR A SOLICITAÇÃO!").isDisplayed());
     }
+
+    @Test
+    public void ValidarBotaoContinuarTelaConfirmacaoDadosSolicitacao()
+    {
+        driver.findElementByName("ACESSE SUA CONTA").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("juliano");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("590");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("92819");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByName("CONTINUAR").click();
+
+        IOSElement banner = driver.findElementByXPath("//*/XCUIElementTypeCell/XCUIElementTypeOther[2]");
+
+        //Coordenadas da posição do elemento
+        int x_element = banner.getLocation().getX();
+        int y_element = banner.getLocation().getY();
+
+        //Coordenadas do toque inicial (press())
+        int x_inicial = banner.getSize().getWidth() - x_element;
+        int y_inicial = banner.getSize().getHeight() + y_element;
+
+        //Coordenadas do toque final (moveTo())
+        int x_final = x_inicial - (x_inicial + 300);
+        int y_final = 0;
+
+        //Swipe to Delete
+        (new TouchAction(driver))
+                .press(x_inicial, y_inicial)
+                .moveTo(x_final, y_final)
+                .release()
+                .perform();
+
+        driver.findElementByAccessibilityId("fun-credit-offer-vehicles").click();
+        driver.findElementByAccessibilityId("Solicitar").click();
+
+        ////////
+        //Preencher dados do Veículo
+        ////////
+
+        //Marca
+        driver.findElementByAccessibilityId("Marca").click();
+        driver.findElementByXPath("(//XCUIElementTypeSearchField[@name=\"Encontre o seu veículo\"])[1]").sendKeys("GM");
+        driver.findElementByAccessibilityId("GM - Chevrolet").click();
+
+        //Modelo
+        driver.findElementByAccessibilityId("Modelo").click();
+        driver.findElementByXPath("(//XCUIElementTypeSearchField[@name=\"Encontre o seu veículo\"])[1]").sendKeys("ONIX");
+        driver.findElementByAccessibilityId("ONIX HATCH ACTIV 1.4 8V Flex 5P Aut.").click();
+
+        //Ano Modelo / Combustível
+        driver.findElementByAccessibilityId("Ano Modelo / Combustível").click();
+        driver.findElementByAccessibilityId("2017 Gasolina").click();
+
+        //Valor de compra
+        driver.findElementByAccessibilityId("Valor de compra").click();
+        driver.getKeyboard().sendKeys("5999000");
+
+        driver.findElementByAccessibilityId("Simular contratação").click();
+
+        driver.findElementByAccessibilityId("Continuar").click();
+
+        //Muda Slider para o dia 15
+        driver.findElementByClassName("XCUIElementTypeSlider").sendKeys("0.5");
+
+        driver.findElementByAccessibilityId("Continuar").click();
+
+        //Muda Slider para 12 parcelas
+        driver.findElementByClassName("XCUIElementTypeSlider").sendKeys("0.3");
+
+        driver.findElementByAccessibilityId("Continuar").click();
+
+        Assert.assertTrue(driver.findElementByAccessibilityId("CONFIRA SEUS DADOS ANTES DE CONFIRMAR A SOLICITAÇÃO!").isDisplayed());
+
+        //Validacões página
+        Assert.assertTrue(driver.findElementByAccessibilityId("R$ 15.333,20").isDisplayed(), "Valor de entrada incorreto");
+        Assert.assertTrue(driver.findElementByAccessibilityId("R$ 44.656,80").isDisplayed(), "Valor de financiamento incorreto");
+        Assert.assertTrue(driver.findElementByAccessibilityId("12x R$ 3.874,15").isDisplayed(), "Valor de parcelas incorreto");
+        Assert.assertTrue(driver.findElementByAccessibilityId("15").isDisplayed(), "Valor de dia de vencimento incorreto");
+        Assert.assertTrue(driver.findElementByAccessibilityId("Pagamentos Adicionais R$ 0,00").isDisplayed(), "Label pagamentos adicionais incorreto");
+    }
+
+    @Test
+    public void ValidarMenuLateralEOpcaoVoltarTelaConfirmacaoDadosSolicitacao()
+    {
+        driver.findElementByName("ACESSE SUA CONTA").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("juliano");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("590");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeTextField").sendKeys("92819");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByClassName("XCUIElementTypeSecureTextField").sendKeys("1122");
+        driver.findElementByName("CONTINUAR").click();
+        driver.findElementByName("CONTINUAR").click();
+
+        IOSElement banner = driver.findElementByXPath("//*/XCUIElementTypeCell/XCUIElementTypeOther[2]");
+
+        //Coordenadas da posição do elemento
+        int x_element = banner.getLocation().getX();
+        int y_element = banner.getLocation().getY();
+
+        //Coordenadas do toque inicial (press())
+        int x_inicial = banner.getSize().getWidth() - x_element;
+        int y_inicial = banner.getSize().getHeight() + y_element;
+
+        //Coordenadas do toque final (moveTo())
+        int x_final = x_inicial - (x_inicial + 300);
+        int y_final = 0;
+
+        //Swipe to Delete
+        (new TouchAction(driver))
+                .press(x_inicial, y_inicial)
+                .moveTo(x_final, y_final)
+                .release()
+                .perform();
+
+        driver.findElementByAccessibilityId("fun-credit-offer-vehicles").click();
+        driver.findElementByAccessibilityId("Solicitar").click();
+
+        ////////
+        //Preencher dados do Veículo
+        ////////
+
+        //Marca
+        driver.findElementByAccessibilityId("Marca").click();
+        driver.findElementByXPath("(//XCUIElementTypeSearchField[@name=\"Encontre o seu veículo\"])[1]").sendKeys("GM");
+        driver.findElementByAccessibilityId("GM - Chevrolet").click();
+
+        //Modelo
+        driver.findElementByAccessibilityId("Modelo").click();
+        driver.findElementByXPath("(//XCUIElementTypeSearchField[@name=\"Encontre o seu veículo\"])[1]").sendKeys("ONIX");
+        driver.findElementByAccessibilityId("ONIX HATCH ACTIV 1.4 8V Flex 5P Aut.").click();
+
+        //Ano Modelo / Combustível
+        driver.findElementByAccessibilityId("Ano Modelo / Combustível").click();
+        driver.findElementByAccessibilityId("2017 Gasolina").click();
+
+        //Valor de compra
+        driver.findElementByAccessibilityId("Valor de compra").click();
+        driver.getKeyboard().sendKeys("5999000");
+
+        driver.findElementByAccessibilityId("Simular contratação").click();
+
+        driver.findElementByAccessibilityId("Continuar").click();
+
+        //Muda Slider para o dia 15
+        driver.findElementByClassName("XCUIElementTypeSlider").sendKeys("0.5");
+
+        driver.findElementByAccessibilityId("Continuar").click();
+
+        //Muda Slider para 12 parcelas
+        driver.findElementByClassName("XCUIElementTypeSlider").sendKeys("0.3");
+
+        driver.findElementByAccessibilityId("Continuar").click();
+
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        //Exibir Menu Lateral
+        driver.findElementByName("menu").click();
+
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Assert.assertTrue(driver.findElementByAccessibilityId("Logo_Oficial_Unicred_iPhone").isDisplayed());
+
+        //Recolher Menu lateral
+        driver.findElementByXPath("//XCUIElementTypeApplication[@name=\"Homologação\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton").click();
+
+        //Aguarda recolhimento menu lateral
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        //Clicar em Voltar da página Crédito pré-aprovado
+        driver.findElementByXPath("//XCUIElementTypeButton[@name=\"Crédito Pré-Aprovado\"]").click();
+
+        Assert.assertTrue(driver.findElementByAccessibilityId("Número de parcelas:").isDisplayed());
+    }
 }
